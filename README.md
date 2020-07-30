@@ -3,11 +3,11 @@
     JSFLIX
 </h1>
 
-<h2 align="center">Aplicação durante a imersão Alura - ReactJS</h2>
+<h2 align="center">Aplicação desenvolvida durante a imersão Alura em ReactJS</h2>
 
   </br>Intenção do projeto:
  
-  Aplicação com âmbito de expandir os conhecimentos em React e desenvolver o portfólio de quem executará.
+  Aplicação com âmbito de expandir os conhecimentos em React e desenvolver entregar uma aplicação funcional no final da semana.
   
   </br>Tecnologias:
   - React;
