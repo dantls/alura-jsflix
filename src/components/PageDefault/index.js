@@ -4,17 +4,14 @@ import Header from '../Header';
 
 import { Main } from './styles';
 
-
-const PageDefault = ({children  }) => {
-  return (
-    <> 
-      <Header />
-        <Main>  
-         {children}
-        </Main>
-      <Footer />
-    </>
-  )
-}
+const PageDefault = ({ children }) => (
+  <>
+    <Header />
+    <Main>
+      {children}
+    </Main>
+    <Footer />
+  </>
+);
 
 export default PageDefault;

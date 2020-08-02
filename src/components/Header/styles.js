@@ -1,16 +1,14 @@
 import styled from 'styled-components';
 
-
 export const LogoImg = styled.img`
   max-width: 168px;
 
   @media (max-width: 800px) {
       max-width: 85px;
   }
-`; 
+`;
 
-
-export const Menu = styled.nav` 
+export const Menu = styled.nav`
   width: 100%;
   height: 94px;
   z-index: 100;
@@ -25,7 +23,7 @@ export const Menu = styled.nav`
   right: 0;
   padding-left: 5%;
   padding-right: 5%;
-  
+
 
   background: var(--black);
   border-bottom: 2px solid var(--primary);

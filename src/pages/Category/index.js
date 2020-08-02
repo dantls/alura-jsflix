@@ -3,14 +3,8 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../components/PageDefault';
 import FormField from '../../components/FormField';
 
-const Category = () => {
-  const initialValues = {
-    name: '',
-    description: '',
-    color: '',
-  };
+const useForm = (initialValues) => {
   const [values, setValues] = useState(initialValues);
-  const [categories, setCategories] = useState([]);
 
   const setValue = (key, value) => {
     setValues({
@@ -26,14 +20,37 @@ const Category = () => {
     );
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setCategories([...categories, values]);
+  const clearForm = () => {
     setValues(initialValues);
   };
 
+  return {
+    handleChange,
+    values,
+    clearForm,
+  };
+};
+
+const Category = () => {
+  const initialValues = {
+    name: '',
+    description: '',
+    color: '',
+  };
+  const { handleChange, values, clearForm } = useForm(initialValues);
+
+  const [categories, setCategories] = useState([]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setCategories([...categories, values]);
+    clearForm();
+  };
+
   useEffect(() => {
-    const URL = 'http://localhost:3004/categories';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categories'
+      : 'https://jsflix.herokuapp.com/categories';
 
     // const load = () => {
     //   fetch(URL)
