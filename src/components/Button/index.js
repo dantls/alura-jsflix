@@ -2,10 +2,10 @@ import React from 'react';
 
 import Container from './styles';
 
-const Button = ({ children, ...rest }) => (
+const ButtonLink = ({ children, ...rest }) => (
   <Container {...rest}>
     {children}
   </Container>
 );
 
-export default Button;
+export default ButtonLink;

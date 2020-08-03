@@ -4,10 +4,10 @@ import Header from '../Header';
 
 import { Main } from './styles';
 
-const PageDefault = ({ children }) => (
+const PageDefault = ({ children, paddingAll }) => (
   <>
     <Header />
-    <Main>
+    <Main paddingAll={paddingAll}>
       {children}
     </Main>
     <Footer />

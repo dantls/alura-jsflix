@@ -1,35 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import PageDefault from '../../components/PageDefault';
+import useForm from '../../hooks';
 import FormField from '../../components/FormField';
-
-const useForm = (initialValues) => {
-  const [values, setValues] = useState(initialValues);
-
-  const setValue = (key, value) => {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  };
-
-  const handleChange = (infosDoEvento) => {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  };
-
-  const clearForm = () => {
-    setValues(initialValues);
-  };
-
-  return {
-    handleChange,
-    values,
-    clearForm,
-  };
-};
+import Button from '../../components/Button';
 
 const Category = () => {
   const initialValues = {
@@ -47,19 +20,17 @@ const Category = () => {
     clearForm();
   };
 
+  // const load = () => {
+  //   fetch(URL)
+  //     .then((response) => response.json())
+  //     .then((resposta) => {
+  //       console.log(resposta);
+  //     });
+  // };
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categories'
-      : 'https://jsflix.herokuapp.com/categories';
-
-    // const load = () => {
-    //   fetch(URL)
-    //     .then((response) => response.json())
-    //     .then((resposta) => {
-    //       console.log(resposta);
-    //     });
-    // };
-
+      ? 'http://localhost:8080/categorias'
+      : 'https://devsoutinhoflix.herokuapp.com/categorias';
     const load = async () => {
       const resource = await fetch(URL);
       const response = await resource.json();
@@ -96,20 +67,20 @@ const Category = () => {
           value={values.color}
         />
 
-        <button type="submit">Cadastrar</button>
+        <Button type="submit">Cadastrar</Button>
       </form>
       <ul>
         {
             categories.map((category, index) => (
-              <li key={`${category.name}${index}`}>
-                {category.name}
+              <li key={`${category.titulo}${index}`}>
+                {category.titulo}
               </li>
             ))
           }
       </ul>
-      <Link to="/">
+      {/* <Link to="/">
         Voltar para Home
-      </Link>
+      </Link> */}
     </PageDefault>
   );
 };
