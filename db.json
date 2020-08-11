@@ -2,59 +2,73 @@
   "categorias": [
     {
       "id": 1,
-      "titulo": "Front End",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+      "titulo": "Vanilla JS",
+      "cor": "#fedc22"
+
     },
     {
       "id": 2,
-      "titulo": "Back End",
-      "cor": "#373A3D",
-      "link_extra": {
-        "text": "Formação de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+      "titulo": "React JS",
+      "cor": "#00D8FF"
+
     }
   ],
   "videos": [
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "JavaScript é uma linguagem de programação de alto nível, geralmente compilado just-in-time e multiparadigma.",
+      "url": "https://www.youtube.com/watch?v=Ptbk2af68e8"
     },
     {
       "id": 2,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "Curso de JavaScript #1 - Conceitos básicos (2020)",
+      "url": "https://www.youtube.com/watch?v=vrSEt5J4q2Y&t=2866s"
     },
     {
       "id": 3,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "Curso de JavaScript #2 - Conceitos básicos (2020)",
+      "url": "https://www.youtube.com/watch?v=sb_XEtwVsG0&list=PLbA-jMwv0cuWbas947cygrzfzHIc7esmp&index=3"
     },
     {
       "id": 4,
-      "categoriaId": 2,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "categoriaId": 1,
+      "titulo": "Curso de JavaScript #3 - Functions parte 1/2 (2020)",
+      "url": "https://www.youtube.com/watch?v=sb_XEtwVsG0"
     },
     {
       "id": 5,
-      "categoriaId": 2,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "categoriaId": 1,
+      "titulo": "Curso de JavaScript #4 - Objetos parte 1/2 (2020)",
+      "url": "https://www.youtube.com/watch?v=vB-aPrlSEXs&t=517s"
     },
     {
       "id": 6,
+      "categoriaId": 1,
+      "titulo": "Responsividade na Prática | Masterclass #08",
+      "url": "https://www.youtube.com/watch?v=H91DhKPjhPk&t=1875s"
+    },
+
+    {
+      "id": 7,
       "categoriaId": 2,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "Recriando interface do Github com ReactJS | UI Clone",
+      "url": "https://www.youtube.com/watch?v=iLEbGQXsg3k"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "Twitter Responsivo com ReactJS | UI Clone",
+      "url": "https://www.youtube.com/watch?v=K-8z_4xvT3o"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Menu do Stripe com ReactJS | UI Clone",
+      "url": "https://www.youtube.com/watch?v=B7V0q0ZSz2o&t=204s"
     }
+
   ]
 }
