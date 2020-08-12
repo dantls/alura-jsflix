@@ -8,8 +8,20 @@
     },
     {
       "id": 2,
+      "titulo": "Node JS",
+      "cor": "#6FA860"
+
+    },
+    {
+      "id": 3,
       "titulo": "React JS",
       "cor": "#00D8FF"
+
+    },
+    {
+      "id": 4,
+      "titulo": "React Native",
+      "cor": "#05A0CB"
 
     }
   ],
@@ -18,7 +30,7 @@
       "id": 1,
       "categoriaId": 1,
       "titulo": "JavaScript é uma linguagem de programação de alto nível, geralmente compilado just-in-time e multiparadigma.",
-      "url": "https://www.youtube.com/watch?v=Ptbk2af68e8"
+      "url": "https://www.youtube.com/watch?v=ipHuSfOYhwA&list"
     },
     {
       "id": 2,
@@ -46,28 +58,76 @@
     },
     {
       "id": 6,
-      "categoriaId": 1,
-      "titulo": "Responsividade na Prática | Masterclass #08",
-      "url": "https://www.youtube.com/watch?v=H91DhKPjhPk&t=1875s"
+      "categoriaId": 2,
+      "titulo": "Node.js: Iniciando da teoria à prática | Masterclass #11",
+      "url": "https://www.youtube.com/watch?v=DiXbJL3iWVs&t=69s"
     },
-
     {
       "id": 7,
       "categoriaId": 2,
-      "titulo": "Recriando interface do Github com ReactJS | UI Clone",
-      "url": "https://www.youtube.com/watch?v=iLEbGQXsg3k"
+      "titulo": "SQL no Node.js com Sequelize | Masterclass #01",
+      "url": "https://www.youtube.com/watch?v=Fbu7z5dXcRs&t=2188s"
     },
     {
       "id": 8,
       "categoriaId": 2,
-      "titulo": "Twitter Responsivo com ReactJS | UI Clone",
-      "url": "https://www.youtube.com/watch?v=K-8z_4xvT3o"
+      "titulo": "Background jobs (filas) no Node.js com Redis | Masterclass #02",
+      "url": "https://www.youtube.com/watch?v=uonKHztGhko&t=4s"
     },
     {
       "id": 9,
       "categoriaId": 2,
+      "titulo": "Curso de Node.js - Introdução ao Express #06",
+      "url": "https://www.youtube.com/watch?v=pohvlFd0byI&t=7s"
+    },
+
+    {
+      "id": 10,
+      "categoriaId": 3,
+      "titulo": "Recriando interface do Github com ReactJS | UI Clone",
+      "url": "https://www.youtube.com/watch?v=iLEbGQXsg3k"
+    },
+    {
+      "id": 11,
+      "categoriaId": 3,
+      "titulo": "Recriando página do Dropbox com ReactJS | UI Clone",
+      "url": "https://www.youtube.com/watch?v=VqP1ECc_j4M"
+    },
+    {
+      "id": 12,
+      "categoriaId": 3,
+      "titulo": "Twitter Responsivo com ReactJS | UI Clone",
+      "url": "https://www.youtube.com/watch?v=K-8z_4xvT3o"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
       "titulo": "Menu do Stripe com ReactJS | UI Clone",
       "url": "https://www.youtube.com/watch?v=B7V0q0ZSz2o&t=204s"
+    },
+    {
+      "id": 14,
+      "categoriaId": 4,
+      "titulo": "Criando um PWA com React Native & Expo Web | Code/Drops #34",
+      "url": "https://www.youtube.com/watch?v=AqJKAJ0TKms"
+    },
+    {
+      "id": 15,
+      "categoriaId": 4,
+      "titulo": "Animações do After Effects no React Native com Lottie | Code/Drops #04",
+      "url": "https://www.youtube.com/watch?v=V3QGW2PgKKY&t=825s"
+    },
+    {
+      "id": 16,
+      "categoriaId": 4,
+      "titulo": "Emulando React Native no iOS/Android com Expo | Code/Drops #03",
+      "url": "https://www.youtube.com/watch?v=eSjFDWYkdxM"
+    },
+    {
+      "id": 17,
+      "categoriaId": 4,
+      "titulo": "Clonando interface do Nubank com React Native",
+      "url": "https://www.youtube.com/watch?v=DDm0M_rZLJo"
     }
 
   ]

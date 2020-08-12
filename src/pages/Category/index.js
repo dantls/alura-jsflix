@@ -30,7 +30,7 @@ const Category = () => {
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
       ? 'http://localhost:8080/categorias'
-      : 'https://devsoutinhoflix.herokuapp.com/categorias';
+      : 'https://jsflix.herokuapp.com/categorias';
     const load = async () => {
       const resource = await fetch(URL);
       const response = await resource.json();
