@@ -7,6 +7,7 @@ const Container = styled.button`
     box-sizing: border-box;
     cursor: pointer;
     padding: 16px 24px;
+    margin-bottom: 5px;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;

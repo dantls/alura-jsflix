@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import PageDefault from '../../components/PageDefault';
 import useForm from '../../hooks';
 import FormField from '../../components/FormField';
 import Button from '../../components/Button';
+import categoriesRepository from '../../repositories/categories';
 
 const Category = () => {
+  const history = useHistory();
   const initialValues = {
     name: '',
     description: '',
@@ -12,32 +15,19 @@ const Category = () => {
   };
   const { handleChange, values, clearForm } = useForm(initialValues);
 
-  const [categories, setCategories] = useState([]);
+  // const [categories, setCategories] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setCategories([...categories, values]);
-    clearForm();
+    categoriesRepository.create({
+      titulo: values.titulo,
+      description: values.description,
+      color: values.color,
+    }).then(() => {
+      clearForm(initialValues);
+      history.push('/');
+    });
   };
-
-  // const load = () => {
-  //   fetch(URL)
-  //     .then((response) => response.json())
-  //     .then((resposta) => {
-  //       console.log(resposta);
-  //     });
-  // };
-  useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://jsflix.herokuapp.com/categorias';
-    const load = async () => {
-      const resource = await fetch(URL);
-      const response = await resource.json();
-      setCategories([...response]);
-    };
-    load();
-  }, []);
 
   return (
     <PageDefault>
@@ -48,9 +38,9 @@ const Category = () => {
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="name"
+          name="titulo"
           onChange={handleChange}
-          value={values.name}
+          value={values.titulo}
         />
         <FormField
           label="Descrição da Categoria"
@@ -62,25 +52,14 @@ const Category = () => {
         <FormField
           label="Cor"
           type="color"
-          name="color"
+          name="cor"
           onChange={handleChange}
-          value={values.color}
+          value={values.cor}
         />
 
         <Button type="submit">Cadastrar</Button>
       </form>
-      <ul>
-        {
-            categories.map((category, index) => (
-              <li key={`${category.titulo}${index}`}>
-                {category.titulo}
-              </li>
-            ))
-          }
-      </ul>
-      {/* <Link to="/">
-        Voltar para Home
-      </Link> */}
+
     </PageDefault>
   );
 };

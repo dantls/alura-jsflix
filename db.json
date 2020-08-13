@@ -1,28 +1,36 @@
 {
   "categorias": [
     {
-      "id": 1,
+
+      "description": "JavaScript é de alto nível, geralmente compilado just-in-time e multiparadigma. ",
       "titulo": "Vanilla JS",
-      "cor": "#fedc22"
-
+      "cor": "#fedc22",
+      "id": 1
     },
     {
-      "id": 2,
+      "description": "Node.js é um ambiente de tempo de execução de código aberto, plataforma cruzada e JavaScript que executa código JavaScript fora de um navegador da web",
       "titulo": "Node JS",
-      "cor": "#6FA860"
-
+      "cor": "#6FA860",
+      "id": 2
     },
     {
-      "id": 3,
+
       "titulo": "React JS",
-      "cor": "#00D8FF"
-
+      "description": "React é uma biblioteca JavaScript de código aberto para construir interfaces de usuário ou componentes de IU",
+      "cor": "#00D8FF",
+      "id": 3
     },
     {
-      "id": 4,
       "titulo": "React Native",
-      "cor": "#05A0CB"
-
+      "description": "React Native é uma estrutura de aplicativo móvel de código aberto criada pelo Facebook, Inc. Ele é usado para desenvolver aplicativos para Android, iOS, Web e UWP, permitindo que os desenvolvedores usem o React junto com os recursos da plataforma nativa.",
+      "cor": "#05A0CB",
+      "id": 4
+    },
+    {
+      "titulo": "TypeORM",
+      "description": "TypeORM é um ORM que pode ser executado nas plataformas NodeJS, Browser, Cordova, PhoneGap, Ionic, React Native, NativeScript, Expo e Electron e pode ser usado com TypeScript e JavaScript",
+      "cor": "#fe0902",
+      "id": 5
     }
   ],
   "videos": [
@@ -80,7 +88,6 @@
       "titulo": "Curso de Node.js - Introdução ao Express #06",
       "url": "https://www.youtube.com/watch?v=pohvlFd0byI&t=7s"
     },
-
     {
       "id": 10,
       "categoriaId": 3,
@@ -129,6 +136,5 @@
       "titulo": "Clonando interface do Nubank com React Native",
       "url": "https://www.youtube.com/watch?v=DDm0M_rZLJo"
     }
-
   ]
 }
