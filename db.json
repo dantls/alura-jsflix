@@ -1,7 +1,6 @@
 {
   "categorias": [
     {
-
       "description": "JavaScript é de alto nível, geralmente compilado just-in-time e multiparadigma. ",
       "titulo": "Vanilla JS",
       "cor": "#fedc22",
@@ -14,7 +13,6 @@
       "id": 2
     },
     {
-
       "titulo": "React JS",
       "description": "React é uma biblioteca JavaScript de código aberto para construir interfaces de usuário ou componentes de IU",
       "cor": "#00D8FF",
@@ -27,9 +25,9 @@
       "id": 4
     },
     {
-      "titulo": "TypeORM",
-      "description": "TypeORM é um ORM que pode ser executado nas plataformas NodeJS, Browser, Cordova, PhoneGap, Ionic, React Native, NativeScript, Expo e Electron e pode ser usado com TypeScript e JavaScript",
-      "cor": "#fe0902",
+      "titulo": "Next.js",
+      "description": "\nNext.js é uma estrutura que mais notavelmente permite que você escreva aplicativos React renderizados por servidor facilmente - entre outras coisas legais.",
+      "color": "",
       "id": 5
     }
   ],
@@ -135,6 +133,24 @@
       "categoriaId": 4,
       "titulo": "Clonando interface do Nubank com React Native",
       "url": "https://www.youtube.com/watch?v=DDm0M_rZLJo"
+    },
+    {
+      "titulo": "Como fazer SEO com React, NextJS e Deploy estático",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
+      "categoriaId": 5,
+      "id": 18
+    },
+    {
+      "titulo": "Pagamento com Stripe e Next.js SSG | Code Challenge",
+      "url": "https://www.youtube.com/watch?v=SXSKvUB9wDA",
+      "categoriaId": 5,
+      "id": 19
+    },
+    {
+      "titulo": "Iniciando com server-side rendering (SSR) no ReactJS com Next.js",
+      "url": "https://www.youtube.com/watch?v=aQFPetOyzUE&t=244s",
+      "categoriaId": 5,
+      "id": 20
     }
   ]
 }
