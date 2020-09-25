@@ -1,6 +1,6 @@
 
 <h1 align="center">
-    JSFLIX
+  <img src="https://github.com/dantls/alura-jsflix/blob/master/src/assets/img/logoJS.png" alt="Logo-JSFlix" />
 </h1>
 
 <h2 align="center">Aplicação desenvolvida durante a imersão Alura em ReactJS</h2>
